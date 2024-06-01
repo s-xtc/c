@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="8.077" height="14" viewBox="0 0 8.077 14">
-  <g id="Next_arrow" data-name="Next/arrow" transform="translate(0)">
-    <rect id="Next_arrow_background" data-name="Next/arrow background" width="8.077" height="14" fill="rgba(0,0,0,0)"/>
-    <g id="right_white_orange" data-name="right white orange" transform="translate(8.077 14) rotate(180)">
-      <path id="Fill_1" data-name="Fill 1" d="M0,1.181l6.9,6.9L8.077,6.9,2.358,1.181,1.182,0Z" transform="translate(0 5.923)" fill="#350941"/>
-      <path id="Fill_2" data-name="Fill 2" d="M4.784,0,0,4.783l1.139,1.14L5.923,1.14Z" transform="translate(2.154)" fill="#ef881f"/>
-    </g>
-  </g>
-</svg>
