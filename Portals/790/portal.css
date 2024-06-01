@@ -1,0 +1,12 @@
+.Dashboard .pubWikiList .pubItem {padding:10px 0 30px 0; border-bottom:2px solid #ccc; display:block;}
+
+.Dashboard .pubWikiList a.article_edit_link { display:inline-block; margin-top:-25px;}
+.huk_cookie_prefernce_toolbar #EU_OPIN_SETTINGS {background-color:#EF881F !important}
+.huk_cookie_prefernce_panel {background-color:#fff}
+
+/*#cookie-info .tab, #cookie-info .tablinks, #cookie-info p.title {background-color:#58246A !important}
+#cookie-info .tablinks.active {background-color:#EF881F !important;}
+#cookie-info #COOKIE_SAVE{background-color:#58246A !important}
+#cookie-info #COOKIE_CANCEL{background-color:#EF881F !important}
+#cookie-info .tab button:hover, #cookie-info .tab input:hover, #cookie-info .tab a:hover  {color:#fff !important; text-decoration:underline !important;}
+#cookie-info a {color:#EF881F !important;}*/
