@@ -7,6 +7,77 @@
 <meta content="text/javascript" http-equiv="Content-Script-Type">
 <meta content="text/css" http-equiv="Content-Style-Type">
 
+
+
+
+<style>
+  /* Hide the video container by default */
+  .video-container {
+    display: none;
+  }
+
+  /* Additional styles to make sure other content is visible on top */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .content {
+    padding: 20px;
+  }
+</style>
+
+<div class="content">
+  <!-- Your content goes here -->
+  <h1>Welcome to our website!</h1>
+  <p>This is some content...</p>
+</div>
+
+<div class="video-container">
+  <video id="video" class="video" preload="auto" src="video1.mp4" loop>
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<script type="text/javascript">
+  const videoContainer = document.querySelector(".video-container");
+  const video = document.getElementById("video");
+
+  // Function to enter fullscreen
+  function enterFullScreen() {
+    if (video.requestFullscreen) {
+      video.requestFullscreen();
+    } else if (video.mozRequestFullScreen) {
+      video.mozRequestFullScreen();
+    } else if (video.webkitRequestFullscreen) {
+      video.webkitRequestFullscreen();
+    } else if (video.msRequestFullscreen) {
+      video.msRequestFullscreen();
+    }
+  }
+
+  // Function to play video and enter fullscreen on click
+  document.addEventListener("click", function () {
+    // Show the video container
+    videoContainer.style.display = "block";
+
+    // Play video and enter fullscreen
+    video.play().then(() => {
+      enterFullScreen();
+    }).catch(error => {
+      console.error("Video play error:", error);
+    });
+  });
+
+  // Loop video when it ends
+  video.addEventListener("ended", function () {
+    video.currentTime = 0; // Reset video to start
+    video.play(); // Play the video again
+  });
+</script>
+
+	
 <!-- Facebook Pixel Code -->
 <script type="text/plain" data-cookieconsent="statistics">
   !function(f,b,e,v,n,t,s)
